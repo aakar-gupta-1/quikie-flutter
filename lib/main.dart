@@ -4,7 +4,9 @@ import 'package:flutter_svg/svg.dart';
 
 import 'package:quikie_test/Components/custom_appbar.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
+import 'package:quikie_test/Screens/digital_member.dart';
 import 'package:quikie_test/Screens/news.dart';
+import 'package:quikie_test/Screens/ranking.dart';
 import 'package:quikie_test/style.dart';
 
 void main() {
@@ -69,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 List<Widget> _buildScreens() {
-  return [News(), Container(), Container(), Container()];
+  return [News(), DigitalMember(), Ranking(), Container()];
 }
 
 List<PersistentBottomNavBarItem> _navBarsItems() {
