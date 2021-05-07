@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_svg/svg.dart';
 
-import 'package:quikie_test/Components/custom_appbar.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'package:quikie_test/Screens/digital_member.dart';
 import 'package:quikie_test/Screens/news.dart';

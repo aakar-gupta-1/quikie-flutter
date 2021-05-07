@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:quikie_test/Screens/profile.dart';
 
 import '../style.dart';
 
@@ -16,11 +17,18 @@ class CustomAppbar extends StatelessWidget {
           SizedBox(height: 40),
           Row(children: [
             SizedBox(width: 20),
-            CircleAvatar(
-              backgroundImage: AssetImage(
-                "assets/images/sample2.jpg",
+            InkWell(
+              onTap: () => {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => Profile()),
+                )
+              },
+              child: CircleAvatar(
+                backgroundImage: AssetImage(
+                  "assets/images/sample2.jpg",
+                ),
+                radius: 25,
               ),
-              radius: 25,
             ),
             SizedBox(width: 15),
             Text(
